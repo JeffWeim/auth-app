@@ -1,8 +1,8 @@
-import {router} from '../index'
+import {router} from '../index';
 
-const API_URL = process.env.PORT
-const LOGIN_URL = API_URL + 'sessions/create/'
-const SIGNUP_URL = API_URL + 'users/'
+const API_URL = process.env.PORT; //'http://localhost:3000/' ||
+const LOGIN_URL = API_URL + 'sessions/create/';
+const SIGNUP_URL = API_URL + 'users/';
 
 export default {
 
