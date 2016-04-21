@@ -45,7 +45,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(9);
+	__webpack_require__(9);
+	(function webpackMissingModule() { throw new Error("Cannot find module \"build.js\""); }());
 
 
 /***/ },
@@ -10292,23 +10293,25 @@
 
 	// </script>
 	// <template>
-	// 	<nav class="navbar navbar-inverse">
-	// 		<div class="container-fluid">
-	// 			<div class="navbar-header">
-	// 				<a class="navbar-brand" href="#">Quotes!</a>
+	// 	<div>
+	// 		<nav class="navbar navbar-inverse">
+	// 			<div class="container-fluid">
+	// 				<div class="navbar-header">
+	// 					<a class="navbar-brand" href="#">Quotes!</a>
+	// 				</div>
+	// 				<ul class="nav navbar-nav">
+	// 					<li class="active"><a v-link="'home'">Home</a></li>
+	// 					<li><a v-link="'login'" v-if="!user.authenticated">Login</a></li>
+	// 					<li><a v-link="'signup'" v-if="!user.authenticated">Sign Up</a></li>
+	// 					<li><a v-link="'secretquote'" v-if="user.authenticated">Secret Quote</a></li>
+	// 					<li><a v-link="'login'" v-if="user.authenticated" @click="logout()">Logout</a></li>
+	// 				</ul>
 	// 			</div>
-	// 			<ul class="nav navbar-nav">
-	// 				<li class="active"><a v-link="'home'">Home</a></li>
-	// 				<li><a v-link="'login'" v-if="!user.authenticated">Login</a></li>
-	// 				<li><a v-link="'signup'" v-if="!user.authenticated">Sign Up</a></li>
-	// 				<li><a v-link="'secretquote'" v-if="user.authenticated">Secret Quote</a></li>
-	// 				<li><a v-link="'login'" v-if="user.authenticated" @click="logout()">Logout</a></li>
-	// 			</ul>
-	// 		</div>
-	// 	</nav>
+	// 		</nav>
 	//
-	// 	<div class="container">
-	// 		<router-view></router-view>
+	// 		<div class="container">
+	// 			<router-view></router-view>
+	// 		</div>
 	// 	</div>
 	// </template>
 	//
@@ -10390,7 +10393,7 @@
 /* 10 */
 /***/ function(module, exports) {
 
-	module.exports = "\n<nav class=\"navbar navbar-inverse\">\n\t<div class=\"container-fluid\">\n\t\t<div class=\"navbar-header\">\n\t\t\t<a class=\"navbar-brand\" href=\"#\">Quotes!</a>\n\t\t</div>\n\t\t<ul class=\"nav navbar-nav\">\n\t\t\t<li class=\"active\"><a v-link=\"'home'\">Home</a></li>\n\t\t\t<li><a v-link=\"'login'\" v-if=\"!user.authenticated\">Login</a></li>\n\t\t\t<li><a v-link=\"'signup'\" v-if=\"!user.authenticated\">Sign Up</a></li>\n\t\t\t<li><a v-link=\"'secretquote'\" v-if=\"user.authenticated\">Secret Quote</a></li>\n\t\t\t<li><a v-link=\"'login'\" v-if=\"user.authenticated\" @click=\"logout()\">Logout</a></li>\n\t\t</ul>\n\t</div>\n</nav>\n\n<div class=\"container\">\n\t<router-view></router-view>\n</div>\n";
+	module.exports = "\n<div>\n\t<nav class=\"navbar navbar-inverse\">\n\t\t<div class=\"container-fluid\">\n\t\t\t<div class=\"navbar-header\">\n\t\t\t\t<a class=\"navbar-brand\" href=\"#\">Quotes!</a>\n\t\t\t</div>\n\t\t\t<ul class=\"nav navbar-nav\">\n\t\t\t\t<li class=\"active\"><a v-link=\"'home'\">Home</a></li>\n\t\t\t\t<li><a v-link=\"'login'\" v-if=\"!user.authenticated\">Login</a></li>\n\t\t\t\t<li><a v-link=\"'signup'\" v-if=\"!user.authenticated\">Sign Up</a></li>\n\t\t\t\t<li><a v-link=\"'secretquote'\" v-if=\"user.authenticated\">Secret Quote</a></li>\n\t\t\t\t<li><a v-link=\"'login'\" v-if=\"user.authenticated\" @click=\"logout()\">Logout</a></li>\n\t\t\t</ul>\n\t\t</div>\n\t</nav>\n\n\t<div class=\"container\">\n\t\t<router-view></router-view>\n\t</div>\n</div>\n";
 
 /***/ },
 /* 11 */
