@@ -1,6 +1,6 @@
 import {router} from '../index';
 
-const API_URL = process.env.PORT; //'http://localhost:3000/' ||
+const API_URL = 'https://jw-auth-app.herokuapp.com/' || process.env.PORT || 'http://localhost:3000/';
 const LOGIN_URL = API_URL + 'sessions/create/';
 const SIGNUP_URL = API_URL + 'users/';
 

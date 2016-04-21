@@ -10326,7 +10326,7 @@
 
 	var _index = __webpack_require__(1);
 
-	var API_URL = process.env.PORT; //'http://localhost:3000/' ||
+	var API_URL = 'https://jw-auth-app.herokuapp.com/' || process.env.PORT || 'http://localhost:3000/';
 	var LOGIN_URL = API_URL + 'sessions/create/';
 	var SIGNUP_URL = API_URL + 'users/';
 
