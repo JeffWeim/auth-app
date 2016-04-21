@@ -1,6 +1,6 @@
 import {router} from '../index'
 
-const API_URL = 'http://localhost:3000/' || process.env.PORT
+const API_URL = process.env.PORT
 const LOGIN_URL = API_URL + 'sessions/create/'
 const SIGNUP_URL = API_URL + 'users/'
 
